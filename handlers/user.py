@@ -38,7 +38,7 @@ async def docx_1(message: types.Message):
     await message.answer_document(document=types.FSInputFile(path=file_1))
 
 @user_private_router.message(F.text.lower() == "о проекте")
-@user_private_router.message(Command("roekt"))
+@user_private_router.message(Command("proekt"))
 async def about_cmd(message: types.Message):
     await message.answer('Национальный космический центр (НКЦ) — строящийся в Москве, на свободной территории ГКНПЦ имени Хруничева в Филях, аэрокосмический кластер.\n'
                          'В НКЦ под одной крышей планируется объединить 18 из 30 московских КБ и предприятий ракетно-космической отрасли Москвы — в сумме, около 12 тысяч сотрудников.\n'
